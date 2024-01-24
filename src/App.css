@@ -1,0 +1,61 @@
+
+.points {
+  border: 2px solid #ff0;
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  margin: 100px auto 0;
+}
+.grid-container {
+  display: grid;
+  padding: 7px;
+  width: 30%;
+  margin: 20px auto 0;
+  box-sizing: border-box;
+}
+.grid-item {
+  color: #000;
+  border: 1px solid red;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.gameOver,
+.points {
+  width: 29%;
+  text-align: center;
+}
+
+body {
+  background: #2b709f;
+}
+.gameOver {
+  background-color: #e9e7e6;
+  color: red;
+  padding: 5px;
+  font-size: 40px;
+  margin: 20px auto 0;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color:#ff0;
+  margin-left:25px
+}
