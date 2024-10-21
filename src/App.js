@@ -14,6 +14,10 @@ function App() {
 
   const random = (num) => Math.floor(Math.random() * num + 1);
 
+   useEffect(() => {
+    gameLevelPossibilities(1);
+  }, []);
+
   const getArray = (arrLength) => {
     let arr = [];
     while (arr.length < arrLength) {
@@ -87,10 +91,6 @@ function App() {
       }
     }
   };
-
- useEffect(() => {
-    gameLevelPossibilities(1);
-  }, [gameLevelPossibilities]);
   
   const handleChange = () => {
     gameLevelPossibilities(1);
