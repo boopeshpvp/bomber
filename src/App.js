@@ -12,10 +12,6 @@ function App() {
   const [winArray, setWinArray] = useState([]);
   const [win, setWin] = useState(false);
 
-  useEffect(() => {
-    gameLevelPossibilities(1);
-  }, [gameLevelPossibilities]);
-
   const random = (num) => Math.floor(Math.random() * num + 1);
 
   const getArray = (arrLength) => {
@@ -91,6 +87,11 @@ function App() {
       }
     }
   };
+
+ useEffect(() => {
+    gameLevelPossibilities(1);
+  }, [gameLevelPossibilities]);
+  
   const handleChange = () => {
     gameLevelPossibilities(1);
   };
