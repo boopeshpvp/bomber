@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     gameLevelPossibilities(1);
-  }, []);
+  }, [gameLevelPossibilities]);
 
   const random = (num) => Math.floor(Math.random() * num + 1);
 
