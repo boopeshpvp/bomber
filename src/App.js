@@ -16,7 +16,7 @@ function App() {
 
    useEffect(() => {
     gameLevelPossibilities(1);
-  }, []);
+  }, [gameLevelPossibilities]);
 
   const getArray = (arrLength) => {
     let arr = [];
