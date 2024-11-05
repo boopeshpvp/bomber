@@ -13,8 +13,10 @@ function App() {
   const [win, setWin] = useState(false);
 
   const random = (num) => Math.floor(Math.random() * num + 1);
-
-
+  
+     useEffect(() => {
+    gameLevelPossibilities(1);
+  }, []);
 
   const getArray = (arrLength) => {
     let arr = [];
@@ -63,10 +65,6 @@ function App() {
     setRemoveBomb(null);
     setColumns(columns);
   };
-
-     useEffect(() => {
-    gameLevelPossibilities(1);
-  }, [gameLevelPossibilities]);
   
   const changeBackground = (key) => {
     console.log("key",key);
