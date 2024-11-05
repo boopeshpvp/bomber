@@ -14,9 +14,7 @@ function App() {
 
   const random = (num) => Math.floor(Math.random() * num + 1);
 
-   useEffect(() => {
-    gameLevelPossibilities(1);
-  }, [gameLevelPossibilities]);
+
 
   const getArray = (arrLength) => {
     let arr = [];
@@ -65,6 +63,11 @@ function App() {
     setRemoveBomb(null);
     setColumns(columns);
   };
+
+     useEffect(() => {
+    gameLevelPossibilities(1);
+  }, [gameLevelPossibilities]);
+  
   const changeBackground = (key) => {
     console.log("key",key);
     let backgroundColor = bgColor;
